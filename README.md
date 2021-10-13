@@ -1,4 +1,4 @@
-# README
+# 11ty + Parcel
 
 Like [11ty](https://11ty.dev/docs)?  
 Sweet! So do I.
