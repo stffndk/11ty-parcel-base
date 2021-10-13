@@ -1,0 +1,66 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: var(--ff-base);
+}
+
+::selection {
+}	
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--ff-heading);
+}
+
+em {
+	font-style: italic;
+}	
+
+strong {
+	font-weight: bold;
+}	
+
+a {
+	color: currentColor;
+}
+
+img {
+	display: inline-block;
+	height: auto;
+	max-width: 100%;
+	vertical-align: baseline;
+}
+
+.wrapper {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	width: 90vw;
+	width: clamp(16rem, 90vw, 70rem); // https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility/
+}
+
+.visually-hidden:not(:focus):not(:active) {
+	clip: rect(0 0 0 0); 
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap; 
+	width: 1px;
+}

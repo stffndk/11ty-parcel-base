@@ -1,0 +1,31 @@
+{
+  "name": "",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-run-all --parallel bundle:*",
+    "bundle:eleventy": "eleventy --serve --quiet",
+    "bundle:parcel": "parcel watch src/assets/css/master.scss --out-dir _site/assets/dist public-url='123'",
+    "build": "run-s prod:*",
+    "prod:eleventy": "eleventy",
+    "prod:parcel": "parcel build src/assets/css/master.scss --out-dir _site/assets/dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stffndk/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stffndk/"
+  },
+  "homepage": "https://github.com/stffndk/",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.5",
+    "sass": "^1.42.1"
+  }
+}
